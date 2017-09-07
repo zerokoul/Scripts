@@ -1,5 +1,5 @@
 <script type="text/javascript">
-var player = "";
+var player;
 var cpu = "CPU";
 var escolhaPlayer;
 var escolhaCpu;
