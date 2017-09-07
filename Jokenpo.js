@@ -1,21 +1,29 @@
-var player = "";
+<script type="text/javascript">
+var player;
 var cpu = "CPU";
 var escolhaPlayer;
 var escolhaCpu;
 var valorCpu;
 var placarCpu = 0;
 var placarPlayer = 0;
+var pedra = "https://imagizer.imageshack.us/v2/192x216q90/922/6pZZVM.png";
+var papel = "https://imagizer.imageshack.us/v2/212x220q90/923/RmInWG.png";
+var tesoura = "https://imagizer.imageshack.us/v2/155x219q90/922/cTgyN5.png";
+var defaul = "https://imagizer.imageshack.us/v2/212x220q90/922/xUokpS.png";
 
 player = prompt("Qual seu nome?");
+if (player == null){
+	player= "Player";
+}
 //alert("Ok vamos começar!");
 function imgPedra(){
-	document.getElementById("imgPlayer").src = "https://imagizer.imageshack.us/v2/192x216q90/922/6pZZVM.png";
+	document.getElementById("imgPlayer").src = pedra;
 }
 function imgPapel(){
-	document.getElementById("imgPlayer").src = "https://imagizer.imageshack.us/v2/212x220q90/923/RmInWG.png";
+	document.getElementById("imgPlayer").src = papel;
 }
 function imgTesoura(){
-	document.getElementById("imgPlayer").src = "https://imagizer.imageshack.us/v2/155x219q90/922/cTgyN5.png";
+	document.getElementById("imgPlayer").src = tesoura;
 }
 
 function escolherPedra(){
@@ -46,8 +54,8 @@ function ganhador(name){
 		}
 }
 function reiniciar(){
-	document.getElementById("imgPlayer").src = "https://imagizer.imageshack.us/v2/212x220q90/922/xUokpS.png";
-	document.getElementById("imgCpu").src = "https://imagizer.imageshack.us/v2/212x220q90/922/xUokpS.png";
+	document.getElementById("imgPlayer").src = defaul;
+	document.getElementById("imgCpu").src = defaul;
 	escolhaCpu = null;
 	escolhaPlayer = null;
 }
@@ -56,15 +64,15 @@ function reiniciar(){
 			valorCpu = Math.random(0, 1);
 			if (valorCpu <= 0.3){
 				escolhaCpu = "pedra";
-				document.getElementById("imgCpu").src = "https://imagizer.imageshack.us/v2/192x216q90/922/6pZZVM.png";
+				document.getElementById("imgCpu").src = pedra;
 			}	
 			else if(valorCpu > 0.3 && valorCpu <= 0.6){
 				escolhaCpu = "papel";
-				document.getElementById("imgCpu").src = "https://imagizer.imageshack.us/v2/212x220q90/923/RmInWG.png";
+				document.getElementById("imgCpu").src = papel;
 			}	
 			else {
 				escolhaCpu = "tesoura";
-				document.getElementById("imgCpu").src = "https://imagizer.imageshack.us/v2/155x219q90/922/cTgyN5.png";
+				document.getElementById("imgCpu").src = tesoura;
 			}
 			console.log(cpu + " escolheu: " + escolhaCpu);
 		}
