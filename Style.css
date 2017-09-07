@@ -1,0 +1,62 @@
+#painel {
+		width: 600px;
+		height: 400px;
+		position: relative;
+		left: 400px;
+		border: 3px solid black;
+		background-color: grey
+	}
+	#menu {
+		position: absolute;
+		top: 310px;
+		left: 220px;
+		background-color: 
+	}
+	#botoes {
+		position: absolute;
+		top: 100px;
+		left: 520px;
+		background-color:
+	}
+	#nomeJogo {
+		color: black;
+		text-align: center;
+		position: relative;
+		top: -21px;
+		background-color: blue
+	}
+	#placarCpu {
+		width: 68px;
+		position: absolute;
+		left: 50px;
+		top: 50px;
+		color: white;
+		font-family: negrito;
+		background-color: black
+	}
+	#placarPlayer {
+		width: 68px;
+		position: absolute;
+		left: 435px;
+		top: 50px;
+		color: white;
+		font-family: Negrito;
+		background-color: black
+	}
+	#cpu {
+		width: 200px;
+		height: 200px;
+		border: 2px solid white;
+		position: absolute;
+		top: 100px;
+		left: 50px
+	}
+	#player {
+		width: 200px;
+		height: 200px;
+		border: 2px solid white;
+		position: absolute;
+		top: 100px;
+		left: 300px
+		
+	}
